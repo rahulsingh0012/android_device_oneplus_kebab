@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device Flags
 
 # Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
-AXION_MAINTAINER := Itachi
+AXION_MAINTAINER := Rahul_Singh
 
 # Processor name (use "_" for spaces)
 AXION_PROCESSOR := Snapdragon_865
@@ -56,3 +56,15 @@ TARGET_INCLUDE_AXFX := true
 
 # BLur
 TARGET_ENABLE_BLUR := true
+
+# doze gestures
+TARGET_DOZE_TAP_PULSE_SUPPORTED := true
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
+TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
+TARGET_DOZE_SIDE_FPS_PULSE_SUPPORTED := true
+
+#GSM
+TARGET_INCLUDE_GOOGLE_TELECOMM  := true
+
+#UDFPS
+TARGET_HAS_UDFPS := true
