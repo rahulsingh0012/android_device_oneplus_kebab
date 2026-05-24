@@ -33,8 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Device Flags
 
-INFINITY_MAINTAINER := "Rahul_Singh"
-
 WITH_GAPPS := true
 
 # Torch Control
@@ -45,3 +43,13 @@ TARGET_ENABLE_BLUR := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
+
+#xreality
+USE_REALITY_ENGINE := true
+
+#surfaceflinger
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
+#Touch boost
+SURFACE_FLINGER_BOOST := true
