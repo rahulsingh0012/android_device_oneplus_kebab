@@ -31,12 +31,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OnePlus8T \
     SystemName=OnePlus8T
 
-# Device Flags
-
-INFINITY_MAINTAINER := "Rahul_Singh"
-
-WITH_GAPPS := true
-
 # Torch Control
 TORCH_STR_SUPPORTED := true
 
