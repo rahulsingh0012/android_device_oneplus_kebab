@@ -38,3 +38,7 @@ WITH_GMS := true
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Torch Control
+TORCH_STR_SUPPORTED := true
+
