@@ -33,8 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Device Flags
 
-INFINITY_MAINTAINER := "Rahul_Singh"
-
 WITH_GAPPS := true
 
 # Torch Control
