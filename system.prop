@@ -1,3 +1,9 @@
+ro.mist.soc=Snapdragon™ 865
+ro.mist.battery=4500 mAh
+ro.mist.display=1080x2400 HDR10+ 120Hz
+ro.mist.camera= Sony IMX586 48MP + 16MP + 5MP + 2MP   
+ro.mist.front= Sony IMX 471 16MP
+ro.mist.platform=SM8250
+ro.mist.screen=6.55' Fluid AMOLED
+ro.mist.device.name=OnePlus 8T
 ro.product.marketname=OnePlus 8T
-ro.infinity.soc=Snapdragon 865
-ro.infinity.camera=48MP + 16MP + 5MP +2MP
