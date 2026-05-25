@@ -31,17 +31,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OnePlus8T \
     SystemName=OnePlus8T
 
-# Device Flags
-
-INFINITY_MAINTAINER := "Rahul_Singh"
-
-WITH_GAPPS := true
-
-# Torch Control
-TORCH_STR_SUPPORTED := true
-
-# BLur
+# MistOs Flags
+MISTOS_MAINTAINER := Rahul_Singh
 TARGET_ENABLE_BLUR := true
-
-#UDFPS
+WITH_GMS := true
 TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
