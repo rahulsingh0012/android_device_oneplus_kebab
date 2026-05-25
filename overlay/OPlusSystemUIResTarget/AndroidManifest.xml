@@ -10,6 +10,4 @@
         android:isStatic="true"
         android:priority="350"
         android:targetPackage="com.android.systemui"/>
-        <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
-        <integer name="config_aodMaxRefreshRate">60</integer>
 </manifest>
