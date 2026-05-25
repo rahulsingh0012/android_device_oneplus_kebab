@@ -33,7 +33,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Device Flags
 
-WITH_GAPPS := true
+WITH_GMS := true
 
 # Torch Control
 TORCH_STR_SUPPORTED := true
