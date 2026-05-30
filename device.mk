@@ -56,6 +56,3 @@ $(call inherit-product, device/oneplus/sm8250-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/kebab/kebab-vendor.mk)
-
-#Viper4fx
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
