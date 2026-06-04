@@ -15,7 +15,7 @@ $(call inherit-product, device/oneplus/kebab/device.mk)
 # Inherit some common Lunaris stuff.
 $(call inherit-product, vendor/lunaris/config/common_full_phone.mk)
 
-PRODUCT_NAME := lunaris_kebab
+PRODUCT_NAME := lineage_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
