@@ -31,38 +31,24 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OnePlus8T \
     SystemName=OnePlus8T
 
-# Device Flags
-
-# Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
-AXION_MAINTAINER := Rahul_Singh
-
-# Processor name (use "_" for spaces)
-AXION_PROCESSOR := Snapdragon_865
-
-# Define rear camera specs (multiple sensors supported)
-AXION_CAMERA_REAR_INFO := 48,16,5,2
-
-# Define front camera specs
-AXION_CAMERA_FRONT_INFO := 16
-
+#Matrixx Stuff
+WITH_GMS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+HBM_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+MATRIXX_MAINTAINER := Rahul_Singh
+TARGET_CUSTOM_UDFPS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+SURFACE_FLINGER_BOOST := true
+TARGET_OPTIMIZED_DEXOPT := true
+USE_REALITY_ENGINE := true
 # Torch Control
 TORCH_STR_SUPPORTED := true
-
-# Los prebuilts
-TARGET_INCLUDES_LOS_PREBUILTS := true
-
-# Ax FX
-TARGET_INCLUDE_AXFX := false
-
-# BLur
-TARGET_ENABLE_BLUR := true
 
 # doze gestures
 TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
 TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
-
-#GSM
-TARGET_INCLUDE_GOOGLE_TELECOMM  := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
