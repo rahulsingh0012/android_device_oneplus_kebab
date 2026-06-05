@@ -33,6 +33,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #Matrixx Stuff
 WITH_GMS := true
+WITH_EXTRA_GAPPS := true
+WITH_GMS_COMMS_SUITE := true
+WITH_GMS_AICORE := true
+WITH_BCR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 HBM_SUPPORTED := true
@@ -52,6 +56,10 @@ TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
+
+#surface_flinger_boost
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 # Charging
 BYPASS_CHARGE_SUPPORTED ?= true
