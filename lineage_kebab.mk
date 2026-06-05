@@ -40,6 +40,7 @@ WITH_BCR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 HBM_SUPPORTED := true
+HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
 TARGET_BOOT_ANIMATION_RES := 1080
 MATRIXX_MAINTAINER := Rahul_Singh
 TARGET_CUSTOM_UDFPS := true
