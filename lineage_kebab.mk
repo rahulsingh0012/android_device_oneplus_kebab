@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kebab device
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
-# Inherit some common Voltage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_kebab
 PRODUCT_DEVICE := kebab
@@ -31,14 +31,43 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OnePlus8T \
     SystemName=OnePlus8T
 
-#Matrixx Stuff
-WITH_GMS := true
-TARGET_SUPPORTS_QUICK_TAP := true
+#AlphaDroid
+TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Build config
+
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 3
+
+ifeq ($(TARGET_BUILD_PACKAGE),3)
+  # (valid only for GAPPS builds)
+  TARGET_INCLUDE_GOOGLE_COMMS := true
+  TARGET_INCLUDE_PIXEL_LAUNCHER := true
+  TARGET_SUPPORTS_QUICK_TAP := true
+  TARGET_SUPPORTS_CALL_RECORDING := true
+  TARGET_INCLUDE_STOCK_ARCORE := true
+  TARGET_INCLUDE_LIVE_WALLPAPERS := true
+  TARGET_SUPPORTS_GOOGLE_RECORDER := false
+endif
+
+# Debugging
+TARGET_INCLUDE_MATLOG := false
+WITH_ADB_INSECURE := false
+
+# Extras
+TARGET_INCLUDE_SIMPLE_TUNE := true
+
+
+# Maintainer
+ALPHA_MAINTAINER := Rahul_Singh
 HBM_SUPPORTED := true
 HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
 EXTRA_UDFPS_ANIMATIONS := true
 SURFACE_FLINGER_BOOST := true
 TARGET_OPTIMIZED_DEXOPT := true
@@ -60,13 +89,3 @@ BYPASS_CHARGE_SUPPORTED ?= true
 # Path for charge toggle
 BYPASS_CHARGE_TOGGLE_PATH ?= /sys/class/oplus_chg/battery/mmi_charging_enable
 
-# Boost Framework
-VOLTAGE_CPU_SMALL_CORES := 0,1,2
-VOLTAGE_CPU_BIG_CORES := 3,4,5,6,7
-VOLTAGE_CPU_SYS_BG := 0-3
-VOLTAGE_CPU_BG := 0-2
-VOLTAGE_CPU_FG := 0-7
-VOLTAGE_CPU_LIMIT_BG := 0-2
-VOLTAGE_CPU_UNLIMIT_UI := 0-7
-VOLTAGE_CPU_LIMIT_UI := 0-5
-VOLTAGE_CPU_DISPLAY := 6-7
