@@ -33,18 +33,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #Matrixx Stuff
 WITH_GMS := true
-WITH_EXTRA_GAPPS := true
-WITH_GMS_COMMS_SUITE := true
-WITH_GMS_AICORE := true
-WITH_BCR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 HBM_SUPPORTED := true
 HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
 TARGET_BOOT_ANIMATION_RES := 1080
-MATRIXX_MAINTAINER := Rahul_Singh
-TARGET_CUSTOM_UDFPS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_UDFPS_ANIMATIONS := true
 SURFACE_FLINGER_BOOST := true
 TARGET_OPTIMIZED_DEXOPT := true
 USE_REALITY_ENGINE := true
@@ -54,9 +49,6 @@ TORCH_STR_SUPPORTED := true
 # doze gestures
 TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
 TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
-
-#UDFPS
-TARGET_HAS_UDFPS := true
 
 #surface_flinger_boost
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
