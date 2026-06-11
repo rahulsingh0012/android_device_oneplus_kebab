@@ -41,10 +41,3 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # Torch Control
 TORCH_STR_SUPPORTED := true
-
-# Charging
-BYPASS_CHARGE_SUPPORTED ?= true
-
-# Path for charge toggle
-BYPASS_CHARGE_TOGGLE_PATH ?= /sys/class/oplus_chg/battery/mmi_charging_enable
-
