@@ -61,9 +61,3 @@ TARGET_HAS_UDFPS := true
 #surface_flinger_boost
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
-
-# Charging
-BYPASS_CHARGE_SUPPORTED ?= true
-
-# Path for charge toggle
-BYPASS_CHARGE_TOGGLE_PATH ?= /sys/class/oplus_chg/battery/mmi_charging_enable
