@@ -66,9 +66,3 @@ TARGET_INCLUDE_GOOGLE_TELECOMM  := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
-
-# Charging
-BYPASS_CHARGE_SUPPORTED ?= true
-
-# Path for charge toggle
-BYPASS_CHARGE_TOGGLE_PATH ?= /sys/class/oplus_chg/battery/mmi_charging_enable
