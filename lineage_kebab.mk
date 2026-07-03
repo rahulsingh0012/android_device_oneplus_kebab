@@ -43,6 +43,7 @@ TARGET_ENABLE_BLUR := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 #xreality
 USE_REALITY_ENGINE := true
