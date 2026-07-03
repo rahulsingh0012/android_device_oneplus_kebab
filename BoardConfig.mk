@@ -10,7 +10,6 @@ include device/oneplus/sm8250-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oneplus/kebab
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 TARGET_KERNEL_ADDITIONAL_FLAGS += \
     CONFIG_INITRAMFS_IGNORE_SKIP_FLAG=y \
     CONFIG_PROC_CMDLINE_APPEND_ANDROID_FORCE_NORMAL_BOOT=y
