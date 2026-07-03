@@ -11,6 +11,8 @@ from extract_utils.main import (
 
 namespace_imports = [
     'vendor/oneplus/sm8250-common',
+    'hardware/google/pixel/pixelstats',
+    'hardware/google/pixel/power-libperfmgr',
 ]
 
 module = ExtractUtilsModule(
