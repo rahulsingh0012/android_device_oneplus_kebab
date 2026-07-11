@@ -15,7 +15,7 @@ $(call inherit-product, device/oneplus/kebab/device.mk)
 # Inherit some common Infinity stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_kebab
+PRODUCT_NAME := infinity_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
