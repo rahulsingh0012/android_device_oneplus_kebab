@@ -33,8 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Device Flags
 
-WITH_GAPPS := true
-
 # Torch Control
 TORCH_STR_SUPPORTED := true
 
@@ -43,3 +41,11 @@ TARGET_ENABLE_BLUR := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
+
+# RisingOS Revived Flags
+PRODUCT_BUILD_PROP_OVERRIDES +=
+     RisingChipset="Snapdragon 865"
+     RisingMaintainer="RahulSingh"
+
+RISING_MAINTAINER := RahulSingh
+WITH_GMS := true
