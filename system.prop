@@ -1,3 +1,8 @@
 ro.product.marketname=OnePlus 8T
 ro.infinity.soc=Snapdragon 865
 ro.infinity.camera=48MP + 16MP + 5MP +2MP
+
+#Blur enabled
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=0
+ro.launcher.blur.appLaunch=1
