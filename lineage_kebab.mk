@@ -54,3 +54,5 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 #Touch boost
 SURFACE_FLINGER_BOOST := true
+
+WITH_PIXEL_LAUNCHER := false
