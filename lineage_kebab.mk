@@ -37,6 +37,12 @@ WITH_GMS := true
 
 WITH_GMS_COMMS_SUITE := false
 
+TARGET_USE_FILES := true
+
+TARGET_USE_GPHOTOS := true
+
+WITH_PIXEL_LAUNCHER := false
+
 # Torch Control
 TORCH_STR_SUPPORTED := true
 
@@ -55,5 +61,3 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 #Touch boost
 SURFACE_FLINGER_BOOST := true
-
-WITH_PIXEL_LAUNCHER := false
