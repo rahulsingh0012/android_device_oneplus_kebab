@@ -35,6 +35,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 WITH_GMS := true
 
+WITH_GMS_COMMS_SUITE := false
+
 # Torch Control
 TORCH_STR_SUPPORTED := true
 
@@ -42,7 +44,6 @@ TORCH_STR_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
 
 #UDFPS
-TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 #xreality
