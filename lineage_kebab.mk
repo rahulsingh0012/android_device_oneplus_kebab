@@ -48,4 +48,5 @@ PRODUCT_BUILD_PROP_OVERRIDES +=
      RisingMaintainer="RahulSingh"
 
 RISING_MAINTAINER := RahulSingh
-WITH_GMS := true
+WITH_GMS := false
+WITH_MICROG := true
