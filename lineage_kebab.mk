@@ -48,5 +48,7 @@ PRODUCT_BUILD_PROP_OVERRIDES +=
      RisingMaintainer="RahulSingh"
 
 RISING_MAINTAINER := RahulSingh
-WITH_GMS := false
-WITH_MICROG := true
+
+# CORE build flags
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
