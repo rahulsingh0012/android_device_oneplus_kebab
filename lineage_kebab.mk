@@ -35,9 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 WITH_GAPPS := true
 
-# Torch Control
-TORCH_STR_SUPPORTED := true
-
 # BLur
 TARGET_ENABLE_BLUR := true
 
