@@ -51,4 +51,3 @@ RISING_MAINTAINER := RahulSingh
 
 # CORE build flags
 WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
