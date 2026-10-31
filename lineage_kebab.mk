@@ -13,7 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aospa/config/common_full_phone.mk)
+# Inherit from the AOSPA configuration.
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
 PRODUCT_NAME := aospa_kebab
 PRODUCT_DEVICE := kebab
