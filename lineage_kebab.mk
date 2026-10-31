@@ -40,3 +40,6 @@ TARGET_ENABLE_BLUR := true
 
 #UDFPS
 TARGET_HAS_UDFPS := true
+
+# Torch Control
+TORCH_STR_SUPPORTED := true
